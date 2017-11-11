@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Dragoon" Collapsed="true">
+    <Position X="2.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAgAAAAAAEgAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Dragoon.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Firebat" Collapsed="true">
+    <Position X="7.25" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAQAAAAAAAAAgAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Firebat.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GAME" Collapsed="true">
+    <Position X="16" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAgAAACAAAAAABAAAAAAAAAAgAAiAAAAEIAAAAAA=</HashCode>
+      <FileName>GAME.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Marine" Collapsed="true">
+    <Position X="9.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>Marine.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Protoss" Collapsed="true">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAEAACAAAAAAAQAAAAAhAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Protoss.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProtossAirUnit" Collapsed="true">
+    <Position X="0.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAgAACAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ProtossAirUnit.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ProtossGroundUnit" Collapsed="true">
+    <Position X="3.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAgAAAgAAAAAAAAAAAAAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>ProtossGroundUnit.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CRand" Collapsed="true">
+    <Position X="14.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAgAIAAABAAAAAAAAAAIA=</HashCode>
+      <FileName>Rand.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Scout" Collapsed="true">
+    <Position X="0.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAgCAAAAAAAAAA=</HashCode>
+      <FileName>Scout.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Team" Collapsed="true">
+    <Position X="14.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACEECAAAAAAAAgEAAAAAAACAAAQAAAFEAAAAAAAAAA=</HashCode>
+      <FileName>Team.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Terran" Collapsed="true">
+    <Position X="9.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAEAAAAAAAAAAQAAAAAgAAAAAAAAAAEAAA=</HashCode>
+      <FileName>Terran.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TerranAirUnit" Collapsed="true">
+    <Position X="11.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAgAAAAgAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TerranAirUnit.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="TerranGroundUnit" Collapsed="true">
+    <Position X="8.25" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAAgAAAACAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>TerranGroundUnit.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Unit" Collapsed="true">
+    <Position X="6" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAAAAAAAAAAEAAgAYAAgAAQgQAAAgAgAAAAAIEgAAAA=</HashCode>
+      <FileName>Unit.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Wraith" Collapsed="true">
+    <Position X="11.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAABAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Wraith.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Zealot" Collapsed="true">
+    <Position X="5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAEAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Zealot.h</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
