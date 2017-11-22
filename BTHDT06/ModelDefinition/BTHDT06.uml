@@ -1,0 +1,1313 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<modelStoreModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/LogicalClassDesigner"
+  dslVersion="1.0.0.0"
+  Id="4b155faf-a9a2-44d7-a7fd-730eebf10b70"
+  name="BTHDT06" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <profileInstances>
+    <packageHasProfileInstances
+      Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
+      <profileInstance
+        Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791"
+        name="StandardProfileL2" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances
+      Id="29349502-908c-4fda-9054-c48619c59ed0">
+      <profileInstance
+        Id="532ea607-fb19-44b8-8502-3351b05452be"
+        name="StandardProfileL3" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <packageHasNamedElement>
+      <class
+        Id="c619c937-7bcd-48dd-b2f7-2a981f32f34d"
+        name="Unit"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="59f14723-0a26-47a4-a23a-a158ff6242cb"
+            isDerived="false"
+            sourceEndRoleName="Unit"
+            targetEndRoleName="Team"
+            isLeaf="false"
+            isAbstract="false">
+            <classMoniker
+              Id="121d3845-f7f8-4bdb-a6e8-322d37ce0d98"
+              LastKnownName="Team"
+              LastKnownLocation="BTHDT06.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9dc3c964-6aee-4413-b644-2096433b768e"
+                  name="Unit"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="Shared"
+                  isComposite="false"
+                  isNavigableOwned="false">
+                  <lowerValueInternal>
+                    <literalString
+                      Id="e0cc9a12-3537-4687-b4a1-145fa2ca2865"
+                      name="Lower"
+                      value="0" />
+                  </lowerValueInternal>
+                  <upperValueInternal>
+                    <literalString
+                      Id="bc8a0ac0-6631-436b-980d-d1192ae2c991"
+                      name="Upper"
+                      value="*" />
+                  </upperValueInternal>
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="47090379-ea56-4ea8-a273-caed9324bcd3"
+                  name="Team"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+        <ownedAttributesInternal>
+          <property
+            Id="0d4b46f8-9106-4f66-a6b3-e6d199c6d3a5"
+            name="AirDamagae"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="34253f47-f552-4ce8-b8cf-0820c2285c7a"
+            name="GroundDamage"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="31fa6ad6-e6fc-4bfd-8981-649e7d3453e1"
+            name="HP"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+          <property
+            Id="2ab51a9a-305a-47fa-83d0-38761c635b1c"
+            name="PS"
+            visibility="Protected"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="db23cdce-6efc-470b-87a0-8cf62615ae13"
+            name="&lt;virtual&gt; AirAttack"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="7f174639-57c1-4cbb-a762-d65bceebf964"
+            name="Unit"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="dd6a424c-7711-4dc9-bf12-7700f40bd284"
+            name="&lt;virtual&gt;beAttacked"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="7a1ebb40-cb7c-42c5-bf71-35a87fd196f4"
+                  name="damage"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="15515968-4b31-4abb-bb4e-0da4e9cbf540"
+            name="&lt;virtual&gt; getClassName"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="df22e4d3-a88e-489b-ac48-6416bafb4f94"
+            name="&lt;virtual&gt;getClassName"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="b1f221ba-b5f1-41b0-ab4d-32acafdea13f"
+            name="&lt;virtual&gt;getHP"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="39a600de-f237-4de6-ad5b-4e3548b48967"
+            name="&lt;virtual&gt;getSpecies"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="90488caa-95c6-49cc-8417-1e6741b63320"
+            name="&lt;virtual&gt;GroundAttack"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="a685b5ed-e0f9-4113-8ee5-ffbe7925e0a1"
+            name="&lt;virtual&gt;MoveMode"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="471435bb-9f7b-43f2-b458-c7a46b03bd77"
+            name="&lt;virtual&gt;showInfo"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="08d5493a-a115-4011-8a1b-def7aa6e2db7"
+            name="&lt;virtual&gt;~Unit"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="353d20fc-8fef-4aa4-9a76-959b1a4ddaa0"
+        name="Terran"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="8b7cad46-1240-45bf-803c-ce8f8d12b9ff"
+            isSubstitutable="false">
+            <classMoniker
+              Id="c619c937-7bcd-48dd-b2f7-2a981f32f34d"
+              LastKnownName="Unit"
+              LastKnownLocation="BTHDT06.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="f4ff9af8-7898-49c6-afb0-a2c8526b3aff"
+            name="&lt;virtual&gt;~Terran"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="9638bc22-8df4-4fa7-8267-1ae594f413a1"
+            name="&lt;virtual&gt;beAttacked"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="0004c6dc-573a-4dac-b6fc-a61997094c55"
+                  name="int damage"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="441d4c69-13df-4274-b97e-c972d2e4de45"
+            name="&lt;virtual&gt;getSpecies"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="d2119c73-16a5-4af5-ac77-b6aa78024f17"
+            name="&lt;virtual&gt;showInfo"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="7dbfba92-27c8-4ed0-a7c7-fcf62f95e174"
+            name="Terran"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="fa575d3a-1cc1-42fd-8a66-db6a1235755d"
+        name="Protoss"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="718b1f07-4745-4996-908d-6fcbf9b0cdf7"
+            isSubstitutable="false">
+            <classMoniker
+              Id="c619c937-7bcd-48dd-b2f7-2a981f32f34d"
+              LastKnownName="Unit"
+              LastKnownLocation="BTHDT06.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="2b9583c3-8e2b-4c4a-bba2-401fefe6da57"
+            name="&lt;virtual&gt;~Protoss"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="706e8162-4a70-4b74-876f-4abbf034203b"
+            name="&lt;virtual&gt;beAttacked"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="be13748f-b85d-4028-b509-48384b16aff4"
+                  name="int damage"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="7f53d88a-18e9-463f-92c5-dc4d17f03ee2"
+            name="&lt;virtual&gt;getSpecies"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="04e4c571-50db-4bcd-b3ca-428476ab535a"
+            name="&lt;virtual&gt;showInfo"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="01525c58-6be0-48d5-9cd2-54f9446f2729"
+            name="Protoss"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="6f3789a1-7397-4f2d-b97d-bb2615c7b9a6"
+        name="Class2"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="7614d4c3-54f3-41cd-b47b-300fb5b1a027"
+        name="Class3"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="cc3a3aa0-b435-461b-a6cf-21608c8f2de2"
+        name="TerranGroundUnit"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="b78e6b7c-d560-49c4-a43e-51d3ca00f3d8"
+            isSubstitutable="false">
+            <classMoniker
+              Id="353d20fc-8fef-4aa4-9a76-959b1a4ddaa0"
+              LastKnownName="Terran"
+              LastKnownLocation="BTHDT06.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="b2505ad1-8ae2-4100-8d14-58dea741f777"
+            name="&lt;virtual&gt;TerranGroundUnit"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="7d5baf60-2f47-4a08-934c-96033a6f8b6b"
+            name="&lt;virtual&gt;MoveMode"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="a4c3ba8a-0674-45fd-bfc7-f867dfcb3601"
+            name="TerranGroundUnit"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="9a5b1cf1-0d87-4c98-a2c0-3029033f4407"
+        name="TerranAirUnit"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="908246ae-8e38-4230-91e5-d292f9638bb6"
+            isSubstitutable="false">
+            <classMoniker
+              Id="353d20fc-8fef-4aa4-9a76-959b1a4ddaa0"
+              LastKnownName="Terran"
+              LastKnownLocation="BTHDT06.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="7174eb4e-fd30-4c2a-a4e6-1cda622a0fca"
+            name="&lt;virtual&gt;~TerranAirUnit"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="cf7b6406-0d7b-4b0f-9834-341ace5386f9"
+            name="TerranAirUnit"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="9765aa3f-601a-4b5d-af37-790e60d4b41d"
+        name="Class1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="0b5b29d3-581f-4047-b539-cce6605d54e6"
+        name="ProtossGroundUnit"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="994d2a7a-b046-4007-95cf-ff479e0cfcdb"
+            isSubstitutable="false">
+            <classMoniker
+              Id="fa575d3a-1cc1-42fd-8a66-db6a1235755d"
+              LastKnownName="Protoss"
+              LastKnownLocation="BTHDT06.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="ce30d2b6-0262-4c86-989e-3a955edb15d6"
+            name="&lt;virtual&gt;~ProtossGroundUnit"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="c18b8164-c341-497e-a64f-7282e239b25a"
+            name="&lt;virtual&gt;MoveMode"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="2dab95ee-7a31-486e-b6ce-ba5539710569"
+            name="ProtossGroundUnit"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="25cce0f3-f815-4584-8a7e-244852e57384"
+        name="ProtossAirUnit"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="26afddf5-6ec7-4037-b8a5-4f5894a26937"
+            isSubstitutable="false">
+            <classMoniker
+              Id="fa575d3a-1cc1-42fd-8a66-db6a1235755d"
+              LastKnownName="Protoss"
+              LastKnownLocation="BTHDT06.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="3270d4d3-80a3-4b1e-a898-a07dafb35dad"
+            name="&lt;virtual&gt;~ProtossAirUnit"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="efc89a3a-5c7a-4b48-be1c-cd1b0f261c29"
+            name="&lt;virtual&gt;MoveMode"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="c1c49b49-a99a-4b18-b4ae-6768b98d707b"
+            name="ProtossAirUnit"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="90d176fb-3170-401d-90f4-3d72a6910666"
+        name="Class4"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="96db3220-793c-4f5c-852c-34adacf5f978"
+        name="Firebat"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="5e8c019f-033b-4717-9aa2-09d9bec1893e"
+            isSubstitutable="false">
+            <classMoniker
+              Id="cc3a3aa0-b435-461b-a6cf-21608c8f2de2"
+              LastKnownName="TerranGroundUnit"
+              LastKnownLocation="BTHDT06.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="e35be816-f2a6-4008-8ed2-f53c3a0253ba"
+            name="&lt;virtual&gt;~Firebat"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="e7524ca3-5b64-4e28-a145-953ec1d424e8"
+            name="Firebat"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="97d7e5ee-0202-44bd-8a91-e63893f1b71b"
+            name="&lt;virtual&gt;getClassName"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="379dd4bc-b667-4ba0-913f-3a42b570c2d0"
+        name="Marine"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="3f34fa66-3ad6-4aa1-964b-d7123b2506d0"
+            isSubstitutable="false">
+            <classMoniker
+              Id="cc3a3aa0-b435-461b-a6cf-21608c8f2de2"
+              LastKnownName="TerranGroundUnit"
+              LastKnownLocation="BTHDT06.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="32da143d-0034-4c04-b703-28763f99e758"
+            name="&lt;virtual&gt;~Marine"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="e8909b0b-2e0e-4c2b-b90c-c1fb1c1356bb"
+            name="Marine"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="758c070b-f7c3-469e-a210-88d49382b046"
+            name="&lt;virtual&gt;getClassName"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="561c446b-4dae-4de6-91d3-0495afd2759f"
+        name="Wraith"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="f7026cd6-9b7d-47a5-aea5-a9cea393e4da"
+            isSubstitutable="false">
+            <classMoniker
+              Id="9a5b1cf1-0d87-4c98-a2c0-3029033f4407"
+              LastKnownName="TerranAirUnit"
+              LastKnownLocation="BTHDT06.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="acc887be-6d9e-4a7c-a197-ffa1534167a7"
+            name="&lt;virtual&gt;~Wraith"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="feeb39e4-4ab3-4533-b175-3f8345a7f7f8"
+            name="Wraith"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="1d420820-743c-4f8d-8dd4-7be414df6896"
+        name="Zealot"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="b3799645-7fc1-43b2-ae2d-3b3f050fe206"
+            isSubstitutable="false">
+            <classMoniker
+              Id="0b5b29d3-581f-4047-b539-cce6605d54e6"
+              LastKnownName="ProtossGroundUnit"
+              LastKnownLocation="BTHDT06.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="71655d86-7a08-4c56-a29d-eeefbf26ee26"
+            name="&lt;virtual&gt;~Zealot"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="285c42af-9527-4a38-a7a1-f89ce4985e92"
+            name="Zealot"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="a6db8687-a7fc-45cd-bcf2-10376c7c4c5a"
+            name="&lt;virtual&gt;getClassName"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="b829c4b6-a9cb-4b52-ba85-e2724c76d946"
+        name="Dragoon"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="5eb4c967-fd48-48f7-80eb-bf4b313d526f"
+            isSubstitutable="false">
+            <classMoniker
+              Id="0b5b29d3-581f-4047-b539-cce6605d54e6"
+              LastKnownName="ProtossGroundUnit"
+              LastKnownLocation="BTHDT06.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="02adf87b-cca6-4054-90df-51bb7f6896f9"
+            name="&lt;virtual&gt;getClassName"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="758a629b-b53e-41ae-97fc-c83e5180e176"
+            name="&lt;virtual&gt;~Dragoon"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="a5db5245-f176-47ad-b84e-8f55181c0a82"
+            name="Dragoon"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="84e310bf-f811-4116-8c8c-eb06298d73c1"
+        name="Scout"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <generalsInternal>
+          <generalization
+            Id="3f9f336f-a9a9-47c3-9408-057194bdddaf"
+            isSubstitutable="false">
+            <classMoniker
+              Id="25cce0f3-f815-4584-8a7e-244852e57384"
+              LastKnownName="ProtossAirUnit"
+              LastKnownLocation="BTHDT06.uml" />
+          </generalization>
+        </generalsInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="9c07b7df-3d31-4f87-9f74-7ebb65cc2b8e"
+            name="&lt;virtual&gt;getClassName"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="57bd99d8-126f-463d-aa1c-ad03e9e9e697"
+            name="&lt;virtual&gt;~Scout"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="d5d5a134-8172-4f27-b9d2-8361d09d9ee0"
+            name="Scout"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="742f6019-a45a-47b4-8a37-75c11f0e53e3"
+        name="Class5"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="336c02c2-6147-407e-b67f-5cc1bf255de3"
+        name="Class6"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="cf9999de-9f60-4cdf-bb10-39da856348d7"
+        name="CRand"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="b189b4f3-6d06-4251-b251-54f43c315921">
+            <classMoniker
+              Id="c619c937-7bcd-48dd-b2f7-2a981f32f34d"
+              LastKnownName="Unit"
+              LastKnownLocation="BTHDT06.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="2e408497-d400-4e99-8495-e19ec0a0a9d5"
+            name="~CRand"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="dee0a691-cdb8-437f-a0e7-0c154d1d080f"
+            name="CRand"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="e37d0456-885b-47d9-85e0-7f02632915ce"
+            name="generateRandnNumab"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="453d1bce-448e-4eab-8607-ca61d991127b"
+                  name="int a"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="00619e3e-ee1e-4fad-bdf4-df2610baac75"
+                  name="int b"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="73c9b2af-c1de-4512-aa0a-0b9693196c1e"
+            name="initSeed"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="121d3845-f7f8-4bdb-a6e8-322d37ce0d98"
+        name="Team"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="8ae59f47-2c01-4e32-bf33-6ae56ab54083">
+            <classMoniker
+              Id="f104bf8c-7b37-41af-b8af-96eadabc59b2"
+              LastKnownName="GAME"
+              LastKnownLocation="BTHDT06.uml" />
+          </dependency>
+        </suppliersInternal>
+        <ownedAttributesInternal>
+          <property
+            Id="6339be98-7e2d-4f98-9f59-dcd9f69ab9f4"
+            name="team"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isReadOnly="false"
+            isUnique="false"
+            isDerived="false"
+            isDerivedUnion="false"
+            aggregation="None"
+            isComposite="false" />
+        </ownedAttributesInternal>
+        <ownedOperationsInternal>
+          <operation
+            Id="1e544514-2325-4bc9-88b6-d49aeafcb611"
+            name="Team"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="bdb19c3e-33c2-4644-9c3c-810ff1d1aac8"
+                  name="string Unit"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="7f5b2446-0fa9-4203-872f-3ecda66d1a93"
+            name="~Team"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="7e670905-3a1e-410a-ae06-2cc1a12ef371"
+            name="attackMode0"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="1dec6501-4d5a-457b-8955-eb6e12a61589"
+                  name="Team &amp;enemyTeam"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="2053e492-dc70-478d-8b01-9fff5532dfc7"
+            name="getUnit"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a1ffe176-1075-4bd9-b7f0-256a286f968a"
+                  name="int i"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="0ac7c7d8-4388-44e4-808d-4c74ad16564f"
+            name="attackMode01"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="b1cd4fac-2c0a-43e3-b155-9dfa9ed8ae71"
+                  name="Team &amp;enemyTeam"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="17fcfc3a-d35c-436a-92a0-6b80ae8755fc"
+            name="attackMode02"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6a823ba9-3303-49f4-b7e1-124994117127"
+                  name="Team &amp;enemyTeam"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="3943e51c-8a4f-4d8d-9af2-59f5a6fc33e1"
+            name="attackMode03"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="a11db25f-7ca7-4e5d-a24e-0d77bb059ef1"
+                  name="Team &amp;enemyTeam"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="da0fda40-32a0-4bf2-9b00-d1fb3b117ea7"
+            name="attackMode04"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="5c37f854-e53a-44ee-b6f6-d9f05e1c2187"
+                  name="Team &amp;enemyTeam"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="3f282be2-d7a8-44c4-93db-dc6e73b03b75"
+            name="NumOfUnit"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="9f11871d-cca5-41bf-81b3-f351676da0be"
+            name="showTeam"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="f104bf8c-7b37-41af-b8af-96eadabc59b2"
+        name="GAME"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <ownedOperationsInternal>
+          <operation
+            Id="5d1151e3-2085-4016-933b-b9e6ec6cda9f"
+            name="~GAME"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="94bb0653-cd45-483b-bd08-2b409c68d519"
+            name="GAME"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="b40e5f2c-5861-4bab-bb47-c63b653f2fdd"
+            name="attack"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="25ed825a-4b16-4bb8-966b-1afc292d85e5"
+                  name="Team &amp;A"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="6a9462fc-1bb8-47b9-b4ff-19ff7ea044ca"
+                  name="Team &amp;B"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="77fb69fc-3762-4e58-9d8a-6f9b18dc87cc"
+                  name="int attackMode"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="5280ce20-f079-4aba-b4a6-5338e1e2145a"
+            name="Combat"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="1245dc70-eb41-45fb-9578-418c95a09545"
+                  name="Team &amp;A"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="4bb2361c-68a0-4683-811c-7a0bbf7588ee"
+                  name="Team &amp;B"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="4a1794d0-686d-4081-9ecb-b6f66dd137d9"
+                  name="int attackMode"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+          <operation
+            Id="c6b95530-09af-4367-80b2-f8f4e49868c0"
+            name="Demo"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="aa413fc0-82dc-4f8b-a27a-e82a401fc789"
+            name="Message"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="dc497dfa-a87e-4c88-9da5-110aa819c452"
+            name="selectAttackMode"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="e93535f4-7d2a-4cac-b0a9-ee2ddc11eb84"
+            name="Start"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false" />
+          <operation
+            Id="a65f3fc4-5ab5-4b1c-bc3d-9983b19a7014"
+            name="Victory"
+            visibility="Private"
+            isLeaf="false"
+            isStatic="false"
+            isAbstract="false"
+            concurrency="Sequential"
+            isQuery="false">
+            <ownedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="84f65fc6-0f8e-49e6-b641-0b683933f633"
+                  name="Team &amp;A"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+              <operationHasOwnedParameters>
+                <parameter
+                  Id="af2a8f16-44d9-4c52-9719-8b800cb32eb2"
+                  name="Team &amp;B"
+                  direction="In"
+                  isUnique="false" />
+              </operationHasOwnedParameters>
+            </ownedParameters>
+          </operation>
+        </ownedOperationsInternal>
+      </class>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="70a49b4e-2421-4620-b806-ac7f08527ef3"
+        name="Class7"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <class
+        Id="d1e21ca0-4c86-42c5-8531-29ab46f3b810"
+        name="Class8"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <enumeration
+        Id="75e975be-7b6b-47c2-bf47-8b195cb9d12b"
+        name="Enumeration1"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <packageMoniker
+        Id="6ac344f9-8dfb-4e8f-8143-14cc4d67e03a"
+        LastKnownName="Package1"
+        LastKnownLocation="Package_1508.uml" />
+    </packageHasNamedElement>
+  </packagedElements>
+  <primitiveType
+    Id="220a3521-e091-4221-bae9-3ef9018e845c"
+    name="Integer"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="8943dc84-709e-4f62-b15a-a3273aa6f165"
+    name="Boolean"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="59259974-6d55-42c6-b7bd-763d77ac8ef9"
+    name="String"
+    isAbstract="false"
+    isLeaf="false" />
+  <primitiveType
+    Id="3ab42e7d-4969-445a-b209-471f5cb8209c"
+    name="UnlimitedNatural"
+    isAbstract="false"
+    isLeaf="false" />
+</modelStoreModel>
