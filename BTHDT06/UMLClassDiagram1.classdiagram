@@ -1,23 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm4="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="12f25e50-ef2e-4cd7-b8a7-13e57588155c" name="UMLClassDiagram1" linkedPackageId="66d82404-52e7-45bf-bedb-5f51d7fb8d7e" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
-  <profileInstances>
-    <packageHasProfileInstances Id="d6dc8081-e038-47e1-8023-9ebfab556d69">
-      <profileInstance Id="0a66699d-5b37-4684-addc-fe360dc73a6d" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="4208c005-d90c-415d-a730-6bd254f1ec8f">
-      <profileInstance Id="c0bef01e-1593-482d-9b9e-d462ce60add3" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <logicalClassDesignerModelHasTypes>
       <class Id="0a9beef8-7f8f-4bcc-84f1-b395a5e90b58" name="Unit" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="c619c937-7bcd-48dd-b2f7-2a981f32f34d" />
+        <suppliersInternal>
+          <dependency Id="e9cf8ee7-2ba5-49c7-be83-4d7a1b397ef2">
+            <classMoniker Id="25d52aad-00b9-4248-9db8-62a44cb37fe8" LastKnownName="CRand" />
+            <elementDefinition Id="77db846a-6d9e-489a-a8af-a1a7aacf559e" />
+          </dependency>
+        </suppliersInternal>
         <targetEnds>
           <association Id="16fe72c3-d02d-4834-ba1b-3c700e217c04" isDerived="false" sourceEndRoleName="Unit" targetEndRoleName="Team" isLeaf="false" isAbstract="false">
             <classMoniker Id="9c388891-b8ba-45ce-bd64-ac75235a24a9" LastKnownName="Team" />
@@ -391,12 +383,6 @@
     <logicalClassDesignerModelHasTypes>
       <class Id="25d52aad-00b9-4248-9db8-62a44cb37fe8" name="CRand" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="cf9999de-9f60-4cdf-bb10-39da856348d7" />
-        <suppliersInternal>
-          <dependency Id="c80b33e3-864f-4607-983b-da2df1a50bf4">
-            <classMoniker Id="0a9beef8-7f8f-4bcc-84f1-b395a5e90b58" LastKnownName="Unit" />
-            <elementDefinition Id="b189b4f3-6d06-4251-b251-54f43c315921" />
-          </dependency>
-        </suppliersInternal>
         <ownedOperationsInternal>
           <operation Id="e82f55a4-8571-4def-aade-ed16e1096708" name="~CRand" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="2e408497-d400-4e99-8495-e19ec0a0a9d5" />
@@ -428,12 +414,6 @@
     <logicalClassDesignerModelHasTypes>
       <class Id="9c388891-b8ba-45ce-bd64-ac75235a24a9" name="Team" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="121d3845-f7f8-4bdb-a6e8-322d37ce0d98" />
-        <suppliersInternal>
-          <dependency Id="2806dcef-5dfe-4d54-ad26-f1b337d678de">
-            <classMoniker Id="441d7259-86ca-424c-8649-0875d5c6e624" LastKnownName="GAME" />
-            <elementDefinition Id="8ae59f47-2c01-4e32-bf33-6ae56ab54083" />
-          </dependency>
-        </suppliersInternal>
         <ownedAttributesInternal>
           <property Id="7085c1f5-50d9-4d48-b376-14379af09c68" name="team" visibility="Private" isLeaf="false" isStatic="false" isReadOnly="false" isUnique="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
             <elementDefinition Id="6339be98-7e2d-4f98-9f59-dcd9f69ab9f4" />
@@ -525,6 +505,12 @@
     <logicalClassDesignerModelHasTypes>
       <class Id="441d7259-86ca-424c-8649-0875d5c6e624" name="GAME" isAbstract="false" isLeaf="false" isActiveClass="false">
         <elementDefinition Id="f104bf8c-7b37-41af-b8af-96eadabc59b2" />
+        <suppliersInternal>
+          <dependency Id="b64a0952-0f74-4526-becd-c4ace823e243">
+            <classMoniker Id="9c388891-b8ba-45ce-bd64-ac75235a24a9" LastKnownName="Team" />
+            <elementDefinition Id="0ef9ea91-1833-4d2b-8037-69be15dba7d3" />
+          </dependency>
+        </suppliersInternal>
         <ownedOperationsInternal>
           <operation Id="e201fcb7-bc80-4a8c-b5d9-0af59cda0453" name="~GAME" isLeaf="false" isStatic="false" isAbstract="false" concurrency="Sequential" isQuery="false">
             <elementDefinition Id="5d1151e3-2085-4016-933b-b9e6ec6cda9f" />
@@ -605,5 +591,19 @@
   </packagedElements>
   <package Id="66d82404-52e7-45bf-bedb-5f51d7fb8d7e" name="BTHDT06">
     <elementDefinition Id="4b155faf-a9a2-44d7-a7fd-730eebf10b70" />
+    <profileInstances>
+      <packageHasProfileInstances Id="d6dc8081-e038-47e1-8023-9ebfab556d69">
+        <profileInstance Id="0a66699d-5b37-4684-addc-fe360dc73a6d" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="4208c005-d90c-415d-a730-6bd254f1ec8f">
+        <profileInstance Id="c0bef01e-1593-482d-9b9e-d462ce60add3" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </logicalClassDesignerModel>

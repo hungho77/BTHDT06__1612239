@@ -25,6 +25,15 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="77db846a-6d9e-489a-a8af-a1a7aacf559e">
+            <classMoniker
+              Id="cf9999de-9f60-4cdf-bb10-39da856348d7"
+              LastKnownName="CRand"
+              LastKnownLocation="BTHDT06.uml" />
+          </dependency>
+        </suppliersInternal>
         <targetEnds>
           <association
             Id="59f14723-0a26-47a4-a23a-a158ff6242cb"
@@ -862,15 +871,6 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
-        <suppliersInternal>
-          <dependency
-            Id="b189b4f3-6d06-4251-b251-54f43c315921">
-            <classMoniker
-              Id="c619c937-7bcd-48dd-b2f7-2a981f32f34d"
-              LastKnownName="Unit"
-              LastKnownLocation="BTHDT06.uml" />
-          </dependency>
-        </suppliersInternal>
         <ownedOperationsInternal>
           <operation
             Id="2e408497-d400-4e99-8495-e19ec0a0a9d5"
@@ -931,15 +931,6 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
-        <suppliersInternal>
-          <dependency
-            Id="8ae59f47-2c01-4e32-bf33-6ae56ab54083">
-            <classMoniker
-              Id="f104bf8c-7b37-41af-b8af-96eadabc59b2"
-              LastKnownName="GAME"
-              LastKnownLocation="BTHDT06.uml" />
-          </dependency>
-        </suppliersInternal>
         <ownedAttributesInternal>
           <property
             Id="6339be98-7e2d-4f98-9f59-dcd9f69ab9f4"
@@ -1115,6 +1106,15 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="0ef9ea91-1833-4d2b-8037-69be15dba7d3">
+            <classMoniker
+              Id="121d3845-f7f8-4bdb-a6e8-322d37ce0d98"
+              LastKnownName="Team"
+              LastKnownLocation="BTHDT06.uml" />
+          </dependency>
+        </suppliersInternal>
         <ownedOperationsInternal>
           <operation
             Id="5d1151e3-2085-4016-933b-b9e6ec6cda9f"
